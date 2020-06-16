@@ -4,5 +4,3 @@ exeetape2: etape2.c
 
 compiletape2: etape2.c 
 	gcc etape2.c -o etape2
-
-serverbonjour
