@@ -51,8 +51,6 @@ int main()
 		msg_du_client = send(accept_client, bonjour, sizeof(bonjour), 0);
 		close(accept_client);
 		close(socket_a_moi);
-		break;
-		                  
 	}
 	else
 		printf("reesayer..\n");
