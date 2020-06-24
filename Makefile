@@ -1,18 +1,13 @@
-exeetape2: etape2.c
-	gcc etape2.c -o etape2
-	./etape2
-compiletape2: etape2.c
-	gcc etape2.c -o etape2
-
-exeserverbonjour: serverbonjour.c
-	gcc serverbonjour.c -o serverbonjour
-	./serverbonjour
-compilserverbonjour: serverbonjour.c
-	gcc serverbonjour.c -o serverbonjour
 
 
-execlientcoucou: clientcoucou.c
-	gcc clientcoucou.c -o clientcoucou
-	./clientcoucou
-compilclientcoucou:clientcoucou.c
-	gcc clientcoucou.c -o clientcoucou
+exeserverbonjour2: serverbonjour2.c
+	gcc serverbonjour2.c -o serverbonjour2 -lpthread
+	./serverbonjour2 9002
+compilserverbonjour2: serverbonjour2.c
+	gcc serverbonjour2.c -o serverbonjour2 -lpthread
+
+execlient1:client1.c
+	gcc client1.c -o client1 -lpthread
+	./client1 9002
+compilclient1:client1.c
+	gcc client1.c -o client1 -lpthread
